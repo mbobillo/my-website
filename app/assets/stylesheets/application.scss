@@ -1,0 +1,87 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+
+:root {
+  --white: #FAFAFA;
+  --grey-1: #F2F2F2;
+  --grey-2: #CCCCCC;
+  --grey-3: #A5A5A5;
+  --grey-4: #7F7F7F;
+  --grey-5: #424242;
+  --black: #0C0C0C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 5rem 5rem;
+  max-width: 80rem;
+  width: 100%;
+}
+
+.h1 {
+  font-size: 47px;
+}
+
+.h2 {
+  font-size: 36px;
+}
+
+.h3 {
+  font-size: 32px;
+}
+
+.h4 {
+  font-size: 27px;
+}
+
+.h5 {
+  font-size: 23px;
+}
+
+.h6 {
+  font-size: 18px;
+}
+
+.container {
+  max-width: 90rem;
+}
+
+.absolute_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
