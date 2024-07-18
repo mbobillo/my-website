@@ -10,4 +10,10 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     get static_pages_webdev_url
     assert_response :success
   end
+
+
+  test "should get consulting" do
+    get static_pages_consulting_url
+    assert_response :success
+  end
 end

@@ -4,4 +4,7 @@ class StaticPagesController < ApplicationController
 
   def webdev
   end
+
+  def consulting
+  end
 end

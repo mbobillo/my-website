@@ -1,2 +1,47 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<% provide(:title, "Home") %>
+<div class="nav-container d-flex flex-row">
+  <div class="col-10 my-3">
+    <h1 class="text-left color-green">WideOp Agency</h1>
+  </div>
+  <div class="col-2 d-flex justify-content-end align-items-center">
+    <a href="/contact" class=" btn button-nav">Contactez-moi</a>
+  </div>
+</div>
+<div class="background-home py-5">
+  <div class="width-limit">
+    <h4 class="">Développement Web</h4>
+    <h6 class = "text-justify text-font my-3">De la conception et prototypage d'idées, au MVP ou développement complet d'applications & sites web, je donne vie à vos projets en garantissant performance technique et expérience client grâce à des solutions créatives, un code robuste et un design fonctionnel.</h6>
+    <a href="/webdev" class="button btn-width">En savoir plus</a>
+  </div>
+</div>
+<div class="full-container d-flex justify-content-end">
+  <div class="wrapper-home d-flex justify-content-end flex-column py-5">
+    <h4 class="color-green">Consulting</h4>
+    <h6 class = "text-justify color-blue text-font my-3">Mes 15 années d'expertise Business et E-commerce me permettent aussi d'étendre mon scope d'intervention en amont du projet pour vous aider à définir clairement vos besoins ou de vous accompagner au-delà du produit, dans le go-to-market ou votre stratégie de marketing digital.</h6>
+    <div class="btn-wrapper">
+      <a href="/consulting" class="button btn-width">En savoir plus</a>
+    </div>
+  </div>
+</div>
+<div class="line-wrapper">
+</div>
+<div class="about-wrapper d-flex flex-row">
+  <h6 class="about-text text-blue">A propos de moi</h6>
+  <i class="fa-solid fa-arrow-right mx-1 text-blue"></i>
+</div>
+<div class="background-home py-5">
+  <h4 class="text-center mb-5">Références</h4>
+  <div class="review-wrapper">
+    <div class="card">
+    <p class="overflow">It's been a pleasure to work with Marion, who had the leadership of our e-business and led our digital efforts for the Good Gout brand. Marion consistently demonstrated dedication, professionalism, and creativity that contributed to our success.
+    Marion has an impressive skillset and understanding of the DTC business, staying up-to-date with the latest trends and technologies in the industry. She has a strategic mindset and is able to execute initiatives with precision, while also being able to pivot when necessary. Her ability to create engaging content that resonates with our target audience is unparalleled, helping us build a strong and loyal customer base.
+    One of Marion's greatest strengths is her analytical mindset, allowing her to track and measure the effectiveness of our DTC strategy and digital campaigns and optimize our efforts for better results. She communicates these insights effectively to the team, ensuring we are all aligned towards our goals.
+    With her unique perspective and digital expertise, I am confident that she will make significant impact to tackle complex business challenges and unlock new opportunities to help clients stay ahead of the curve.</p>
+    <span class="mt-2"><strong>Pascale Laborde, CEO Good Goût</strong></span>
+    </div>
+     <div class="card">
+    <p class="overflow">Marion a une connaissance pointue dans le marketing digital et l'optimisation des sites e-commerce. Grâce à sa rigueur et son talent, les sites du groupe ont opéré une croissance soutenue sur les dernières années. Grâce à ses différentes expériences, Marion apporte une vision holistique de la performance digitale et a la capacité de proposer des solutions en prenant tous les paramètres en compte : logistique, finance, revue d'offre, marketing, SEO et évidemment gestion technique.</p>
+    <span class="mt-2"><strong>Sophie Lacroix, DG France groupe H&H</strong></span>
+    </div>
+  </div>
+</div>

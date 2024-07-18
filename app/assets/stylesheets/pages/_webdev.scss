@@ -1,0 +1,54 @@
+.font-size-large {
+  font-size: 36px;
+}
+
+.img-fit {
+  object-fit: cover;
+  width: 100%;
+}
+
+.placeholder-empty {
+  background-color: none;
+}
+
+.color-blue {
+  color: $blue;
+}
+
+.color-light-green {
+  color: $light-green;
+}
+
+.color-green {
+  color: $green;
+}
+
+.logo-wrapper {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-fit {
+  max-width: 100%;
+	display: block;
+}
+
+.logo-width {
+  width: 90px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: end;
+}
+
+.logo-height {
+  height: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.center {
+  width: 400px;
+  margin: 0 auto;
+}

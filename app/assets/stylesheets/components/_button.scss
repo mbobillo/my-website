@@ -1,5 +1,5 @@
 .button {
-  background-color: var(--black);
+  background-color: $green;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -7,4 +7,30 @@
   border-radius: 0.25rem;
   gap: 0.5rem;
   padding: 0.75rem 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  color: white;
+  border: $green;
+}
+
+.button:hover {
+  background-color: $light-green;
+}
+
+.button-nav {
+  background-color: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  color: $green;
+  border: 1px solid $green;
+  height: 48px;
+}
+
+.button-nav:hover {
+  background-color: $light-green;
 }
