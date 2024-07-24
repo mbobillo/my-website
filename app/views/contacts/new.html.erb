@@ -1,0 +1,24 @@
+<div class="nav-blue">
+  <div class="nav-container d-flex flex-row">
+    <div class="col-10 my-3">
+      <h1 class="text-left">
+        <a href="/" class="text-decoration-none  color-white" >WideOp Agency</a>
+      </h1>
+    </div>
+    <div class="col-2 d-flex justify-content-end align-items-center">
+      <a href="/contact" class=" d-none">Contactez-moi</a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h1 class = "text-center mb-5 color-green">Contact</h1>
+  <%= simple_form_for(@contact) do |f| %>
+    <%= f.input :first_name, required: true, label: 'Prénom' %>
+    <%= f.input :last_name, required: true, label: 'Nom' %>
+    <%= f.input :email, required: true, label: 'Email' %>
+    <%= f.input :telephone, label: 'Téléphone (facultatif)' %>
+    <%= f.input :company, label: 'Société'%>
+    <%= f.input :message, as: :text, required: true, label: 'Message',:input_html => {:rows => 8} %>
+    <%= f.button :submit, 'Envoi', class: 'button' %>
+  <% end %>
+</div>

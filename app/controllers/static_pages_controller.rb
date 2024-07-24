@@ -7,4 +7,7 @@ class StaticPagesController < ApplicationController
 
   def consulting
   end
+
+  def about
+  end
 end
