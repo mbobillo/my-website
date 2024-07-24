@@ -14,6 +14,26 @@
   </head>
 
   <body>
+    <% if notice %>
+      <p class="notice"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert"><%= alert %></p>
+    <% end %>
+
     <%= yield %>
+
+    <script>
+    document.addEventListener("turbo:load", () => {
+      const notice = document.querySelector(".notice");
+      const alert = document.querySelector(".alert");
+      if (notice) {
+        setTimeout(() => notice.remove(), 5000); // remove notice after 5 seconds
+      }
+      if (alert) {
+        setTimeout(() => alert.remove(), 5000); // remove alert after 5 seconds
+      }
+    });
+    </script>
   </body>
 </html>

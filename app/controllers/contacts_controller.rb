@@ -5,10 +5,11 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(contact_params)
-    if contact.save
+    if @contact.save
       redirect_to new_contact_path, notice: 'Message envoyé.'
     else
-      render :new
+      flash.now[:alert] = "Erreur lors de l'envoi du message."
+      render :new, status: :unprocessable_entity
     end
   end
 

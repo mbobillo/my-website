@@ -11,14 +11,18 @@
   </div>
 </div>
 <div class="container">
-  <h1 class = "text-center mb-5 color-green">Contact</h1>
+  <div class= "calendar-wrapper">
+    <h3 class="color-blue text-center">Vous avez un projet et souhaitez en discuter ? Prenez rdv pour un call de 30 minutes gratuit !</h3>
+    <button class="button center my-5"><a href="https://calendly.com/marion-bobillo/30min" class="text-decoration-none color-white" >Prendre RDV</a></button>
+  </div>
+  <h3 class = "text-center mb-3 color-blue">Ou laissez-nous un message</h3>
   <%= simple_form_for(@contact) do |f| %>
-    <%= f.input :first_name, required: true, label: 'Prénom' %>
-    <%= f.input :last_name, required: true, label: 'Nom' %>
-    <%= f.input :email, required: true, label: 'Email' %>
+    <%= f.input :first_name, required: true, label: 'Prénom', error: 'Champs obligatoire' %>
+    <%= f.input :last_name, required: true, label: 'Nom', error: 'Champs obligatoire' %>
+    <%= f.input :email, required: true, label: 'Email', error: 'Saisir un email valide' %>
     <%= f.input :telephone, label: 'Téléphone (facultatif)' %>
     <%= f.input :company, label: 'Société'%>
-    <%= f.input :message, as: :text, required: true, label: 'Message',:input_html => {:rows => 8} %>
+    <%= f.input :message, as: :text, required: true, label: 'Message', :input_html => {:rows => 8}, error: 'Aucun message saisi' %>
     <%= f.button :submit, 'Envoi', class: 'button' %>
   <% end %>
 </div>
