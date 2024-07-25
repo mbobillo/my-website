@@ -1,0 +1,109 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.photo-fit {
+  max-width: 150px;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: justify;
+}
+
+.experience-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-row {
+  margin-right: 1rem;
+  align-items: end !important;
+  margin-bottom: 0px;
+}
+
+.icon-size {
+  font-size: 20px;
+  }
+
+.tab-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.tab-title {
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  cursor: pointer;
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.tab-title.active {
+  color: $blue;
+  font-weight: bold;
+  border-bottom: 3px solid $blue;
+}
+
+.card-content {
+  font-size: small;
+  width: 70%;
+  height: 100%;
+  padding: 2rem;
+  background-color: white;
+  text-align: justify;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-inner {
+  display: none;
+}
+
+.card-inner.active {
+  display: block;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: $green;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .photo-fit {
+    max-width: 100px;
+    max-height: 150px;
+    margin-bottom: 2rem;
+  }
+  .tab-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-content {
+    width: 90%;
+  }
+}

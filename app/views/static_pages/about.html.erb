@@ -1,4 +1,90 @@
-<div class="container">
-  <h1 class = "text-center mb-5 color-green">A propos de moi</h1>
+<% provide(:title, "Consulting") %>
 
+<div class="nav-blue">
+  <div class="nav-container d-flex flex-row">
+    <div class="col-10 my-3">
+      <h1 class="text-left">
+        <a href="/" class="text-decoration-none  color-white" >WideOp Agency</a>
+      </h1>
+    </div>
+    <div class="col-2 d-flex justify-content-end align-items-center">
+      <a href="/contact" class=" btn button-nav">Contactez-moi</a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="header">
+    <img src="assets/marion.png" alt="photo marion" class="photo-fit">
+    <h6 class = "color-blue center-all">🏆 Diplômée ESSEC et Le Wagon<br><br>
+    🚀 4 ans de Conseil en stratégie et 10 ans+ dans le Digital (Marketing, PMO, E-commerce, Développement full-stack) qui me permettent d'accompagner mes clients sur tout le spectre du Digital <br><br>
+    💰 L'offre d'une agence web, mais à un tarif freelance !</h6>
+  </div>
+  <div class="experience-section" data-controller="tab">
+    <div class="d-flex flex-row my-5 align-items-end">
+      <h3 class="title-row text-center color-green align-items-end">Expériences</h3>
+      <a href="https://www.linkedin.com/in/marion-bobillo-rouch-86065a14/" target="_blank"><i class="fa-brands fa-linkedin icon-size"></i></a>
+    </div>
+    <div class="tab-wrapper" >
+      <a class="tab-title active" data-tab-target="tab" data-action="click->tab#changeTab" data-target="content1" href="#">Business Strategy</a>
+      <a class="tab-title" data-tab-target="tab" data-action="click->tab#changeTab" data-target="content2" href="#">Digital Expertise</a>
+      <a class="tab-title" data-tab-target="tab" data-action="click->tab#changeTab" data-target="content3" href="#">PMO / PM / PO</a>
+      <a class="tab-title" data-tab-target="tab" data-action="click->tab#changeTab" data-target="content4" href="#">Développement web</a>
+    </div>
+    <div class="card-content">
+      <div id="content1" class="card-inner active" data-tab-target="content">
+        <h6 class="card-title">Conseil en stratégie (4 ans)</h6>
+        <p>Due Diligences commerciales et Projets de stratégie de développement et de croissance pour des Directions Générales ou Directions opérationnelles.<br>
+        <strong>Clients/Projets</strong>: Lafarge, Hitachi, Voltalia, Yves Rocher, ville de Caen, Easyvoyage, SMCP, Camaieu, La Brioche dorée, Pomona... <br>
+        <strong>Compétences clés</strong>: pilotage de projets complexes dont projets internationaux, travail au niveau Comex, analyse marché et analyse financière, élaboration de business models et business plans, conduite de workshops, rédaction de rapports et présentations, gestion de la relation client.</p>
+        <h6 class="card-title mt-3">Entrepreneur (3 ans)</h6>
+        <p>Lancement d'une marque de mode premium en eshop et Retail.<br>
+        <strong>Results</strong>: c.100k€ CA la dernière année. Distribuée aux Galeries Lafayette et Printemps Haussmann et dans une dizaine de points de vente à l'international.<br>
+        <strong>Compétences clés</strong>: Stratégie (business planning, branding et positionnement, pricing, stratégie commerciale), Marketing (digital media, influence et collaborations, RP) et Opérations (design, production, logistique).<br></p>
+        <h6 class="card-title mt-3">Responsable E-commerce (3,5 ans)</h6>
+        <p>Pilotage de 3 eshops et management de l'équipe digitale. <br>
+        <strong>Results</strong>: CA x4 en 3 ans sur Good Goût, croissances à 2 chiffres YoY sur Biostime et lancement d'un eshop sur Dodie.<br>
+        <strong>Compétences clés</strong>: Marketing digital (acquisition, CRO, SEO, CRM, social media), UX/UI, Gestion de projets techniques (refonte de site, lancement de site, migrations, gestion de roadmaps et de TMA, intégration d'outils), Management (recrutement, formation, management d'équipe).</p>
+      </div>
+      <div id="content2" class="card-inner" data-tab-target="content">
+        <h6 class="card-title">Consultante digitale freelance (1,5 ans)</h6>
+        <p>Accompagnement de clients sur leurs problématiques digitales et PMO <br>
+        <strong>Compétences clés</strong>: Stratégie et organisation, Pilotage de projets complexes, Marketing, gestion de la relation client, animation de workshops, analyse de données.</p>
+        <strong>Clients</strong>: Sézane, Flatsy, Bordeaux Métropole, Giphar.</p>
+        <h6 class="card-title mt-3">Responsable E-commerce (3,5 ans)</h6>
+        <p>Pilotage de 3 eshops et management de l'équipe digitale. <br>
+        <strong>Results</strong>: CA x4 en 3 ans sur Good Goût (refonte du site, acquisition, +8€ de panier moyen, +10 pts de réachat, mise en place du CRM), croissances à 2 chiffres YoY sur Biostime et lancement d'un eshop sur Dodie.<br>
+        <strong>Compétences clés</strong>: Marketing digital (acquisition, CRO, SEO, CRM, social media), UX/UI, Gestion de projets techniques (refonte de site, lancement de site, migrations, gestion de roadmaps et de TMA, intégration d'outils), Management (recrutement, formation, management d'équipe).</p>
+        <h6 class="card-title mt-3">Entrepreneur (3 ans)</h6>
+        <p>Lancement d'une marque de mode premium en eshop et Retail.<br>
+        <strong>Results</strong>: c.100k€ CA la dernière année. Distribuée aux Galeries Lafayette et Printemps Haussmann et dans une dizaine de points de vente à l'international.<br>
+        <strong>Compétences clés</strong>: Stratégie (business planning, branding et positionnement, pricing, stratégie commerciale), Marketing (digital media, influence et collaborations, RP) et Opérations (design, production, logistique).<br></p>
+      </div>
+      <div id="content3" class="card-inner" data-tab-target="content">
+        <h6 class="card-title">Consultante digitale freelance (1,5 ans)</h6>
+        <p>Accompagnement de clients sur leurs problématiques digitales et PMO.<br>
+        <strong>Compétences clés</strong>: Stratégie et organisation, Pilotage de projets complexes / PMO, Marketing, gestion de la relation client, animation de workshops, analyse de données.</p>
+        <strong>Clients</strong>: Sézane, Flatsy, Bordeaux Métropole, Giphar.</p>
+        <h6 class="card-title mt-3">Responsable E-commerce (3,5 ans)</h6>
+        <p>Gestion de 3 eshops + lancement d'un POC de marketplace: pilotage de 3 roadmaps produit.<br>
+        <strong>Results</strong>: Un lancement de site sous Magento, une refonte en PHP/Symfony, intégration d'outils ou API (CRM Actito, Clicdata, Stripe, mutualisation d'un WMS), un POC sous Webflow.<br>
+        <strong>Compétences clés</strong>: Pilotage de roadmaps et de budgets IT, Discovery, rédaction de cahier des charges et spécifications techniques, recette, Delivery, pilotage de la TMA.</p>
+        <h6 class="card-title mt-3">PMO (1 an)</h6>
+        <p>PMO salariée chez Gérard Darel (Retail/Mode). Pilotage des projets structurants de l'entreprise avec chaque direction opérationnelle, report à la DG et au fond d'investissement. Siège au Codir.<br>
+        <strong>Compétences clés</strong>: Pilotage de projets (roadmaps, budgets, KPIs, plans d'actions, suivi), stratégie, opérations, organisation/priorisation.
+        <h6 class="card-title mt-3">Conseil en stratégie (4 ans)</h6>
+        <p>Due Diligences commerciales et Projets de stratégie de développement et de croissance pour des Directions Générales ou Directions opérationnelles.<br>
+        <strong>Clients/Projets</strong>: Lafarge, Hitachi, Voltalia, Yves Rocher, ville de Caen, Easyvoyage, SMCP, Camaieu, La Brioche dorée, Pomona... <br>
+        <strong>Compétences clés</strong>: pilotage de projets complexes dont projets internationaux, travail au niveau Comex, analyse marché et analyse financière, élaboration de business models et business plans, conduite de workshops, rédaction de rapports et présentations, gestion de la relation client.</p>
+      </div>
+      <div id="content4" class="card-inner" data-tab-target="content">
+        <h6 class="card-title"><a href="https://www.co-rent.xyz/" target="_blank" class="color-green" >Co-Rent </a>(projet de fin de formation Le Wagon)</h6>
+        <p>Site de mise en relation de parents séparés pour louer un logement de long terme en alternance.<br>
+        <strong>Stack technique</strong>: Ruby on Rails, Stimulus, Javascript, HTML, CSS.</p>
+        <h6 class="card-title mt-3">WideOp Agency</h6>
+        <p>Site vitrine que vous avez sous les yeux 😀.<br>
+        <strong>Stack technique</strong>: Ruby on Rails, Stimulus, Javascript, HTML, CSS.</p>
+        <h6 class="card-title mt-3"><em>Quand mon expérience personnelle n'est pas suffisante, je monte une équipe plus senior, que ce soit en développement ou en UX design.</em></h6>
+      </div>
+    </div>
+  </div>
 </div>
