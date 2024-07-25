@@ -91,6 +91,25 @@
   outline: none;
 }
 
+.footer {
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 200px;
+}
+
+.font-small {
+  font-size: 14px !important;
+}
+
+.sitemap {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  margin-left: 4rem;
+}
 
 @media (max-width: 1250px) {
   .nav-container {
@@ -121,5 +140,26 @@
 @media (max-width: 768px) {
   .text-left {
     font-size: 20px;
+  }
+  .footer-wrapper {
+    justify-content: flex-start;
+  }
+  .media {
+    width: 0px;
+    .fa-brands {
+      display: none;
+    }
+  }
+  .coordinates {
+    flex-grow: 1;
+    padding-right: 2rem;
+  }
+  .links {
+    max-width: 250px;
+    margin-left: 0px;
+  }
+  .sitemap {
+    margin-left: 0px;
+    font-size: 12px;
   }
 }

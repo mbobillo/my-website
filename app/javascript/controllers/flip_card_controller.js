@@ -20,7 +20,7 @@ export default class extends Controller {
   }
 
   isMobile() {
-    return window.innerWidth <= 1024;
+    return window.innerWidth <= 992;
   }
 
   flip(event) {
