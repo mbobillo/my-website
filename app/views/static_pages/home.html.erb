@@ -4,14 +4,15 @@
   <div class="col-lg-10 col-md-9 col-7 my-3">
     <h1 class="text-left color-green">WideOp Agency</h1>
   </div>
-  <div class="col-lg-1 col-md-1 col-2 dropdown d-flex justify-content-center align-items-center">
-    <i class="fa-solid fa-bars menu-size color-blue text-center" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  <div class="col-lg-1 col-md-1 col-2 d-flex justify-content-center align-items-center" data-controller="dropdown" class="dropdown">
+    <i class="fa-solid fa-bars menu-size color-blue text-center dropdown-button" data-action="click->dropdown#toggle"></i>
+    <div data-dropdown-target="menu" class="dropdown-menu">
       <a class="dropdown-item" href="/webdev">Développement Web</a>
       <a class="dropdown-item" href="/consulting">Consulting</a>
       <a class="dropdown-item" href="/consulting">Product and Project Management</a>
-
-      <a class="dropdown-item" href="#">Something else here</a>
+      <a class="dropdown-item" href="/about">A propos de moi</a>
+      <a class="dropdown-item" href="/contact">Contact</a>
+      <a class="dropdown-item" href="https://calendly.com/marion-bobillo/30min">RDV gratuit</a>
     </div>
   </div>
   <div class="col-lg-1 col-md-2 col-3 d-flex justify-content-end align-items-center">

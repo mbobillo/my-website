@@ -117,3 +117,47 @@ p {
 .menu-size {
   font-size: 32px;
 }
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-button {
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown-menu.show {
+  position: absolute;
+  justify-content: start;
+  align-items: start;
+  background-color: white;
+  border: 1px solid #ddd;
+  z-index: 1000;
+  min-width: 160px;
+  top: 95px;
+  right: 70px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.dropdown-item {
+  color: $blue;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: $light-green;
+}
+
+@media(max-width: 800px) {
+  .dropdown-menu.show {
+    top: 70px;
+    right: 20px;
+  }
+}
