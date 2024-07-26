@@ -1,28 +1,19 @@
-<div class="nav-blue">
-  <div class="nav-container d-flex flex-row">
-    <div class="col-10 my-3">
-      <h1 class="text-left">
-        <a href="/" class="text-decoration-none  color-white" >WideOp Agency</a>
-      </h1>
-    </div>
-    <div class="col-2 d-flex justify-content-end align-items-center">
-      <a href="/contact" class=" d-none">Contact</a>
-    </div>
-  </div>
-</div>
+<%= render "static_pages/bluenav" %>
 <div class="container">
   <div class= "calendar-wrapper">
     <h3 class="color-blue text-center">Vous avez un projet et souhaitez en discuter ? Prenez rdv pour un call de 30 minutes gratuit !</h3>
     <button class="button center my-5"><a href="https://calendly.com/marion-bobillo/30min"  target="_blank" class="text-decoration-none color-white" >Prendre RDV</a></button>
   </div>
-  <h3 class = "text-center mb-3 color-blue">Ou laissez-moi un message</h3>
-  <%= simple_form_for(@contact) do |f| %>
-    <%= f.input :first_name, required: true, label: 'Prénom', error: 'Champs obligatoire' %>
-    <%= f.input :last_name, required: true, label: 'Nom', error: 'Champs obligatoire' %>
-    <%= f.input :email, required: true, label: 'Email', error: 'Saisir un email valide' %>
-    <%= f.input :telephone, label: 'Téléphone (facultatif)' %>
-    <%= f.input :company, label: 'Société'%>
-    <%= f.input :message, as: :text, required: true, label: 'Message', :input_html => {:rows => 8}, error: 'Aucun message saisi' %>
-    <%= f.button :submit, 'Envoi', class: 'button' %>
-  <% end %>
+  <h3 class = "text-center mb-4 color-blue">Ou laissez-moi un message</h3>
+  <div class="form-wrapper">
+    <%= simple_form_for(@contact) do |f| %>
+      <%= f.input :first_name, required: true, label: 'Prénom', error: 'Champs obligatoire' %>
+      <%= f.input :last_name, required: true, label: 'Nom', error: 'Champs obligatoire' %>
+      <%= f.input :email, required: true, label: 'Email', error: 'Saisir un email valide' %>
+      <%= f.input :telephone, label: 'Téléphone (facultatif)' %>
+      <%= f.input :company, label: 'Société'%>
+      <%= f.input :message, as: :text, required: true, label: 'Message', :input_html => {:rows => 8}, error: 'Aucun message saisi' %>
+      <%= f.button :submit, 'Envoi', class: 'button' %>
+    <% end %>
+  </div>
 </div>

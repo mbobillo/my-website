@@ -1,23 +1,14 @@
 <% provide(:title, "Consulting") %>
 
-<div class="nav-blue">
-  <div class="nav-container d-flex flex-row">
-    <div class="col-10 my-3">
-      <h1 class="text-left">
-        <a href="/" class="text-decoration-none  color-white" >WideOp Agency</a>
-      </h1>
-    </div>
-    <div class="col-2 d-flex justify-content-end align-items-center">
-      <a href="/contact" class=" btn button-nav">Contact</a>
-    </div>
-  </div>
-</div>
+<%= render "bluenav" %>
 <div class="container">
   <div class="header">
     <img src="assets/marion.png" alt="photo marion" class="photo-fit">
-    <h6 class = "color-blue center-all">🏆 Diplômée ESSEC et Le Wagon<br><br>
-    🚀 4 ans de Conseil en stratégie et 10 ans+ dans le Digital (Marketing, PMO, E-commerce, Développement full-stack) qui me permettent d'accompagner mes clients sur tout le spectre du Digital <br><br>
-    💰 L'offre d'une agence web, mais à un tarif freelance !</h6>
+    <div class="desc-wrapper">
+      <h6 class = "color-blue center-all">🏆 Diplômée ESSEC et Le Wagon<br><br>
+      🚀 4 ans de Conseil en stratégie et 10 ans+ dans le Digital (Marketing, PMO, E-commerce, Développement full-stack) qui me permettent d'accompagner mes clients sur tout le spectre du Digital <br><br>
+      💰 L'offre d'une agence web, mais à un tarif freelance !</h6>
+    </div>
   </div>
   <div class="experience-section" data-controller="tab">
     <div class="d-flex flex-row my-5 align-items-end">
@@ -86,5 +77,9 @@
         <h6 class="card-title mt-3"><em>Quand mon expérience personnelle n'est pas suffisante, je monte une équipe plus senior, que ce soit en développement ou en UX design.</em></h6>
       </div>
     </div>
+  </div>
+  <div class= "calendar-wrapper pt-5">
+    <h4 class="color-blue text-center">Vous avez un projet et souhaitez en discuter ? Prenez rdv pour un call de 30 minutes gratuit !</h4>
+    <button class="button center mt-5"><a href="https://calendly.com/marion-bobillo/30min" target="_blank" class="text-decoration-none color-white" >Prendre RDV</a></button>
   </div>
 </div>

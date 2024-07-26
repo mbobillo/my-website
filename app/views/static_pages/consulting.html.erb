@@ -1,28 +1,6 @@
 <% provide(:title, "Consulting") %>
 
-<div class="nav-blue">
-  <div class="nav-container d-flex flex-row">
-  <div class="col-lg-10 col-md-9 col-7 my-3">
-      <h1 class="text-left">
-        <a href="/" class="text-decoration-none  color-white" >WideOp Agency</a>
-      </h1>
-    </div>
-    <div class="col-lg-1 col-md-1 col-2 d-flex justify-content-center align-items-center" data-controller="dropdown" class="dropdown">
-      <i class="fa-solid fa-bars menu-size color-white text-center dropdown-button" data-action="click->dropdown#toggle"></i>
-      <div data-dropdown-target="menu" class="dropdown-menu">
-        <a class="dropdown-item" href="/webdev">Développement Web</a>
-        <a class="dropdown-item" href="/consulting">Consulting</a>
-        <a class="dropdown-item" href="/consulting">Product and Project Management</a>
-        <a class="dropdown-item" href="/about">A propos de moi</a>
-        <a class="dropdown-item" href="/contact">Contact</a>
-        <a class="dropdown-item" href="https://calendly.com/marion-bobillo/30min">RDV gratuit</a>
-      </div>
-    </div>
-  <div class="col-lg-1 col-md-2 col-3 d-flex justify-content-end align-items-center">
-      <a href="/contact" class=" btn button-nav">Contact</a>
-    </div>
-  </div>
-</div>
+<%= render "bluenav" %>
 <div class="container">
   <h1 class = "text-center mb-5 color-green">Consulting digital</h1>
   <h4 class = "text-center mb-5 color-blue">J'accompagne la transformation digitale des entreprises, d'un point de vue stratégique ou opérationnel : digitalisation du business ou des process métiers, marketing digital et pilotage de projets techniques (PM, PO, PMO).</h4>
