@@ -11,11 +11,12 @@
   justify-content: center;
   align-items: center;
   padding:20px;
-  background-color: white;
+  background-color: black;
+  color: white !important;
   border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin-left: 2rem;
   margin-right: 2rem;
+  border: 2px solid $yellow;
 }
 
 .photo-fit {
@@ -69,9 +70,9 @@
 }
 
 .tab-title.active {
-  color: $blue;
+  color: black;
   font-weight: bold;
-  border-bottom: 3px solid $blue;
+  border-bottom: 3px solid $yellow;
 }
 
 .card-content {
@@ -97,7 +98,7 @@
 .card-title {
   font-size: 16px;
   font-weight: 600;
-  color: $green;
+  color: black;
 }
 
 @media (max-width: 768px) {

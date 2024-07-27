@@ -4,7 +4,7 @@
 }
 
 .background-home {
-  background-color: $blue;
+  background-color: black;
   color: white;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .line-wrapper {
-  border-bottom: rgb(164, 160, 160) 1px solid;
+  border-bottom: rgb(0, 0, 0) 1px solid;
 }
 
 .about-wrapper {
@@ -58,9 +58,10 @@
   padding: 2rem;
   background-color: white;
   text-align: justify;
-  color: $blue;
+  color: black;
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border: 2px solid $yellow
 }
 
 .card-text {
@@ -74,7 +75,7 @@
 }
 
 .toggle-button {
-  color: $green;
+  color: black;
   background-color: white;
   cursor: pointer;
   padding-top: 10px;

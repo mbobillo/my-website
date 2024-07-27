@@ -1,5 +1,5 @@
 .button {
-  background-color: $green;
+  background-color: black;
   width: 160px;
   display: flex;
   flex-direction: row;
@@ -10,12 +10,11 @@
   padding: 0.75rem 1rem;
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
   color: white;
-  border: $green;
 }
 
 .button:hover {
-  background-color: $light-green;
-  color: white;
+  background-color: $yellow;
+  color: black;
 }
 
 .button-nav {
@@ -28,12 +27,53 @@
   gap: 0.5rem;
   padding: 0.75rem 1rem;
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
-  color: $green;
-  border: 1px solid $green;
+  color: black;
+  border: 1px solid black;
   height: 48px;
 }
 
 .button-nav:hover {
-  background-color: $light-green;
-  color: white;
+  background-color: $yellow;
+  color: black;
+  border: 1px solid black;
+}
+
+.button-black {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  color: white !important;
+  border: 1px solid white;
+  height: 48px;
+}
+
+.button-black:hover {
+  background-color: $yellow;
+  color: black !important;
+}
+
+.button-black-dnone {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  color: white !important;
+  height: 48px;
+}
+
+.button-black-dnone:hover {
+  background-color: $yellow;
+  color: black !important;
+  border: none;
 }

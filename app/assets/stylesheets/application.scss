@@ -30,6 +30,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  background-color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -145,14 +146,14 @@ p {
 }
 
 .dropdown-item {
-  color: $blue;
+  color: black;
   padding: 10px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-item:hover {
-  background-color: $light-green;
+  background-color: $yellow;
 }
 
 @media(max-width: 800px) {
