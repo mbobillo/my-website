@@ -10,10 +10,12 @@
   padding: 0.75rem 1rem;
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
   color: white;
+  border: 2px solid $yellow
 }
 
 .button:hover {
   background-color: $yellow;
+  border: 2px solid $yellow;
   color: black;
 }
 
@@ -28,14 +30,14 @@
   padding: 0.75rem 1rem;
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
   color: black;
-  border: 1px solid black;
+  border: 2px solid $yellow;
   height: 48px;
 }
 
 .button-nav:hover {
   background-color: $yellow;
   color: black;
-  border: 1px solid black;
+  border: 2px solid $yellow;
 }
 
 .button-black {
@@ -49,13 +51,14 @@
   padding: 0.75rem 1rem;
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
   color: white !important;
-  border: 1px solid white;
+  border: 2px solid $yellow;
   height: 48px;
 }
 
 .button-black:hover {
   background-color: $yellow;
   color: black !important;
+  border: 2px solid $yellow;
 }
 
 .button-black-dnone {
@@ -70,10 +73,12 @@
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
   color: white !important;
   height: 48px;
+  border: 2px solid $yellow;
 }
 
 .button-black-dnone:hover {
   background-color: $yellow;
+  border: 2px solid $yellow;
   color: black !important;
   border: none;
 }

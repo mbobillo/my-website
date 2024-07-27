@@ -30,7 +30,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: white;
+  background-color: white !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -72,6 +72,10 @@ p {
 
 .h6 {
   font-size: 18px;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px $yellow;
 }
 
 .absolute_img {
