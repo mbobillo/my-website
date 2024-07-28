@@ -1,19 +1,23 @@
 <%= render "static_pages/blacknav" %>
-<div class="container">
+<div class="container-width mt-5">
   <div class= "calendar-wrapper">
     <h3 class="color-black text-center">Vous avez un projet et souhaitez en discuter ? Prenez rdv pour un call de 30 minutes gratuit !</h3>
     <a href="https://calendly.com/marion-bobillo/30min"  target="_blank" class="text-decoration-none" ><button class="button-black-dnone center my-5">Prendre RDV</button></a>
   </div>
+</div>
+<div class="background-white pb-5">
   <h3 class = "text-center mb-4 color-black">Ou laissez-moi un message</h3>
-  <div class="form-wrapper">
-    <%= simple_form_for(@contact) do |f| %>
-      <%= f.input :first_name, required: true, label: 'Prénom', error: 'Champs obligatoire' %>
-      <%= f.input :last_name, required: true, label: 'Nom', error: 'Champs obligatoire' %>
-      <%= f.input :email, required: true, label: 'Email', error: 'Saisir un email valide' %>
-      <%= f.input :telephone, label: 'Téléphone (facultatif)' %>
-      <%= f.input :company, label: 'Société'%>
-      <%= f.input :message, as: :text, required: true, label: 'Message', :input_html => {:rows => 8}, error: 'Aucun message saisi' %>
-      <%= f.button :submit, 'Envoi', class: 'button' %>
-    <% end %>
+  <div class="container-width">
+    <div class="form-wrapper">
+      <%= simple_form_for(@contact) do |f| %>
+        <%= f.input :first_name, required: true, label: 'Prénom', error: 'Champs obligatoire' %>
+        <%= f.input :last_name, required: true, label: 'Nom', error: 'Champs obligatoire' %>
+        <%= f.input :email, required: true, label: 'Email', error: 'Saisir un email valide' %>
+        <%= f.input :telephone, label: 'Téléphone (facultatif)' %>
+        <%= f.input :company, label: 'Société'%>
+        <%= f.input :message, as: :text, required: true, label: 'Message', :input_html => {:rows => 8}, error: 'Aucun message saisi' %>
+        <%= f.button :submit, 'Envoi', class: 'button-nav' %>
+      <% end %>
+    </div>
   </div>
 </div>

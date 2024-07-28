@@ -68,7 +68,7 @@
   padding: 20px;
   box-sizing: border-box;
   border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
 .flip-card-front {
@@ -79,7 +79,6 @@
 .flip-card-back {
   background-color: white;
   color: black;
-  border: 1px solid $yellow;
   transform: rotateY(180deg);
   text-align: start;
 }

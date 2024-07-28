@@ -16,7 +16,6 @@
   border-radius: 5px;
   margin-left: 2rem;
   margin-right: 2rem;
-  border: 2px solid $yellow;
 }
 
 .photo-fit {
@@ -24,7 +23,7 @@
   max-height: 200px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
 .center-all {
@@ -84,7 +83,7 @@
   text-align: justify;
   color: black;
   border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
 .card-inner {
