@@ -4,17 +4,41 @@ export default class extends Controller {
   static targets = ["text", "button"];
 
   connect() {
-    this.collapsedHeight = this.textTarget.scrollHeight;
-    this.textTarget.style.maxHeight = "6em";
+    this.collapsedHeight = "6em";
+    this.expanded = false;
+    this.textTargets.forEach(text => {
+      text.style.maxHeight = this.collapsedHeight;
+      text.style.overflow = "hidden";
+      text.style.transition = "max-height 0.3s ease";
+    });
   }
 
   toggle() {
-    if (this.textTarget.style.maxHeight === "6em") {
-      this.textTarget.style.maxHeight = `${this.collapsedHeight}px`;
-      this.buttonTarget.textContent = "Lire moins";
+    this.expanded = !this.expanded;
+    if (this.expanded) {
+      this.expandAll();
     } else {
-      this.textTarget.style.maxHeight = "6em";
-      this.buttonTarget.textContent = "Lire la suite";
+      this.collapseAll();
     }
+  }
+
+  expandAll() {
+    this.textTargets.forEach(text => {
+      text.style.maxHeight = "none";
+      text.style.overflow = "visible";
+    });
+    this.buttonTargets.forEach(button => {
+      button.textContent = "Lire moins";
+    });
+  }
+
+  collapseAll() {
+    this.textTargets.forEach(text => {
+      text.style.maxHeight = this.collapsedHeight;
+      text.style.overflow = "hidden"; 
+    });
+    this.buttonTargets.forEach(button => {
+      button.textContent = "Lire la suite";
+    });
   }
 }
