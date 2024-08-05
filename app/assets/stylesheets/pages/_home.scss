@@ -10,12 +10,73 @@
 
 .wrapper-home {
   padding-right: 8rem;
-  max-width: 650px;
+  padding-left: 8rem;
+  gap: 2rem;
 }
 
-.width-limit {
-  max-width: 650px;
-  padding-left: 8rem;
+.rotating-square {
+  width: 15rem;
+  height: 12rem;
+  background-color: none;
+  border: solid 1px $yellow;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  color: white;
+  position: relative;
+  animation: 5s spin linear 1s 1;
+  animation-fill-mode: forwards;
+}
+
+.rotating-square::before {
+  content: "SRATEGIE DIGITALE";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: 5s changeText linear 1s 1;
+}
+
+@keyframes spin {
+  0% {
+  }
+
+  25% {
+    transform: rotateX(360deg) rotateY(0) rotateZ(0);
+  }
+
+  50% {
+    transform: rotateX(360deg) rotateY(0) rotateZ(0);
+  }
+
+  75% {
+    transform: rotateX(360deg) rotateY(0) rotateZ(0);
+  }
+
+  100% {
+    transform: rotateX(360deg) rotateY(0) rotateZ(0);
+  }
+}
+
+@keyframes changeText {
+  0%, 20% {
+    content: "STRATEGIE DIGITALE";
+  }
+
+  20.1%, 40% {
+    content: "PRODUCT MANAGEMENT";
+  }
+
+  40.1%, 60% {
+    content: "PMO";
+  }
+
+  60.1%, 80% {
+    content: "MARKETING DIGITAL";
+  }
+
+  80.1%, 100% {
+    content: "DEVELOPPEMENT WEB";
+  }
 }
 
 .text-font {
