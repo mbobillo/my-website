@@ -14,16 +14,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .animation-wrapper {
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .animation-wrapper .swiper-wrapper {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .animation-wrapper .swiper-wrapper .slider-card {
@@ -45,6 +47,14 @@
   width: 1px;
 }
 
+.motto-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
 .text-font {
   font-weight: 400;
 }
@@ -58,6 +68,10 @@
   border-bottom: rgb(0, 0, 0) 1px solid;
 }
 
+.line-wrapper-white {
+  border-bottom: white 1px solid;
+}
+
 .about-wrapper {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -65,7 +79,8 @@
   max-width: 300px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;}
+  justify-content: center;
+}
 
 .about-text {
   text-decoration: underline;
