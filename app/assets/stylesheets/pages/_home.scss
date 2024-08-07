@@ -15,67 +15,80 @@
 }
 
 .rotating-square {
-  width: 15rem;
-  height: 12rem;
-  background-color: none;
-  border: solid 1px $yellow;
+  width: 17rem;
+  height: 11rem;
+  border: solid 1px yellow;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
-  color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   position: relative;
-  animation: 5s spin linear 1s 1;
-  animation-fill-mode: forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  animation: rotateSquare 6s linear infinite;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
 }
 
-.rotating-square::before {
-  content: "SRATEGIE DIGITALE";
+.text-container {
   position: absolute;
+  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: 5s changeText linear 1s 1;
+  font-size: 24px;
+  color: white;
+  z-index: 1;
+  backface-visibility: hidden;
 }
 
-@keyframes spin {
+.text-container::before {
+  content: "STRATEGIE DIGITALE";
+  animation: changeText 6s linear infinite;
+}
+
+@keyframes rotateSquare {
   0% {
+    transform: rotateX(0) rotateY(0);
   }
-
-  25% {
-    transform: rotateX(360deg) rotateY(0) rotateZ(0);
+  16.66% {
+    transform: rotateY(360deg);
   }
-
+  33.33% {
+    transform: rotateY(360deg) rotateX(360deg);
+  }
   50% {
-    transform: rotateX(360deg) rotateY(0) rotateZ(0);
+    transform: rotateY(720deg) rotateX(360deg);
   }
-
-  75% {
-    transform: rotateX(360deg) rotateY(0) rotateZ(0);
+  66.66% {
+    transform: rotateY(720deg) rotateX(720deg);
   }
-
+  83.33% {
+    transform: rotateY(1080deg) rotateX(720deg) ;
+  }
   100% {
-    transform: rotateX(360deg) rotateY(0) rotateZ(0);
+    transform: rotateY(1080deg) rotateX(1080deg);
   }
 }
 
 @keyframes changeText {
-  0%, 20% {
+  0%, 16.66% {
     content: "STRATEGIE DIGITALE";
   }
-
-  20.1%, 40% {
+  16.67%, 33.33% {
     content: "PRODUCT MANAGEMENT";
   }
-
-  40.1%, 60% {
+  33.34%, 50% {
     content: "PMO";
   }
-
-  60.1%, 80% {
+  50.01%, 66.66% {
     content: "MARKETING DIGITAL";
   }
-
-  80.1%, 100% {
+  66.67%, 83.33% {
     content: "DEVELOPPEMENT WEB";
+  }
+  83.34%, 100% {
+    content: "E-COMMERCE";
   }
 }
 
