@@ -17,30 +17,43 @@
   align-items: center;
 }
 
-.animation-wrapper {
+.wrapper {
   max-width: 100%;
+  background-color: black;
+  padding: 2em 2em;
 }
 
-.animation-wrapper .swiper-wrapper {
+.wrapper .swiper-wrapper {
   width: 100%;
+  height: 10em;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-.animation-wrapper .swiper-wrapper .slider-card {
+.wrapper .swiper-wrapper .card {
   width: 18em;
-  height: 7em;
+  height: 90%;
   background-color: black;
   border: solid 1px yellow;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 2em 1em;
   align-content: center;
   text-align: center;
   font-size: 24px;
   color: white;
   margin: 0 2em;
   cursor: pointer;
+}
+
+.wrapper .swiper-wrapper .card .a, .wrapper .swiper-wrapper .card h3 {
+  color: white;
+  text-decoration: none !important;
+}
+
+a {
+  color: white;
+  text-decoration: none !important;
 }
 
 ::-webkit-scrollbar {

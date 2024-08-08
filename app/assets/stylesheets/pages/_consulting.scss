@@ -10,7 +10,7 @@
   font-size: 24px;
 }
 
-.wrapper {
+.main-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 18px;
@@ -21,7 +21,7 @@
 }
 
 @media (max-width: 1024px) {
-  .wrapper {
+  .main-wrapper {
     grid-template-columns: 1fr;
     grid-gap: 18px;
   }

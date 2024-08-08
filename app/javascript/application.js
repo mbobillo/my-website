@@ -5,7 +5,7 @@ import "bootstrap"
 import "@popperjs/core"
 
 
-var swiper = new Swiper(".animation-wrapper", {
+var swiper = new Swiper(".wrapper", {
       loop: true,
       autoplay: true,
       autoplayTimeout:1000,
