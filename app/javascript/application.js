@@ -5,20 +5,27 @@ import "bootstrap"
 import "@popperjs/core"
 
 
-var swiper = new Swiper(".wrapper", {
+document.addEventListener('turbo:load', function() {
+  if (document.querySelector('.wrapper')) {
+  var swiper = new Swiper(".wrapper", {
       loop: true,
       autoplay: true,
       autoplayTimeout:1000,
       autoplayHoverPause: true,
+      autoplayDisableOnInteraction: false,
       effect: "coverflow",
       grabCursor: true,
       centeredSlides: true,
+      allowSlideNext: true,
+      allowSlidePrev: true,
+      allowTouchMove: true,
       slidesPerView: "auto",
       coverflowEffect: {
         rotate: 0,
         stretch: 0,
-        depth: 300,
+        depth: 250,
         modifier: 1,
         slideShadows: false,
       },
     });
+}});

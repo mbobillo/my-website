@@ -6,6 +6,7 @@
 .background-black {
   background-color: black;
   color: white;
+  padding-bottom: 2rem;
 }
 
 .wrapper-home {
@@ -18,16 +19,24 @@
 }
 
 .wrapper {
-  max-width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
   background-color: black;
   padding: 2em 2em;
 }
 
+.swiper-container {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+
+}
 .wrapper .swiper-wrapper {
   width: 100%;
+  max-width: 100%;
   height: 10em;
   display: flex;
-  align-items: center;
+  box-sizing: border-box;
 }
 
 .wrapper .swiper-wrapper .card {
@@ -44,6 +53,11 @@
   color: white;
   margin: 0 2em;
   cursor: pointer;
+}
+
+.swiper-slide {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .wrapper .swiper-wrapper .card .a, .wrapper .swiper-wrapper .card h3 {
@@ -65,7 +79,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin: 3rem auto;
 }
 
 .text-font {
@@ -83,11 +97,10 @@ a {
 
 .line-wrapper-white {
   border-bottom: white 1px solid;
+  margin: 3rem auto;
 }
 
 .about-wrapper {
-  margin-top: 20px;
-  margin-bottom: 20px;
   padding: 40px;
   max-width: 300px;
   margin: 0 auto;
@@ -105,6 +118,7 @@ a {
   justify-content: space-evenly;
   justify-items: center;
   align-content: space-evenly;
+  padding-bottom: 2rem;
 }
 
 .card {
@@ -191,6 +205,26 @@ a {
     padding-left: 20px;
     margin: 0 auto;
   }
+  .wrapper {
+    max-width: 100vw;
+    padding: 1rem;
+  }
+
+  .swiper-container {
+    max-width: 100vw;
+    overflow: hidden;
+
+  }
+  .wrapper .swiper-wrapper {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    box-sizing: border-box;
+  }
+  .swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    margin: 0;  }
 }
 
 @media (max-width: 768px) {
@@ -223,5 +257,27 @@ a {
   .sitemap {
     margin-left: 0px;
     font-size: 12px;
+  }
+  .wrapper .swiper-wrapper .card {
+    width: 90vw;
+    height: auto;
+    padding: 1em 0.5em;
+    font-size: 20px;
+    margin: 0;
+  }
+  .wrapper .swiper-wrapper .card .a, .wrapper .swiper-wrapper .card h3 {
+    color: white;
+    text-decoration: none !important;
+    font-size: 20px !important;
+  }
+  .motto-wrapper {
+    margin: 2rem auto;
+  }
+  .line-wrapper-white {
+    margin: 2rem auto;
+  }
+
+  .swiper-3D, .swiper-coverflow {
+    perspective: 100vw;
   }
 }
